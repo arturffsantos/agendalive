@@ -11,7 +11,11 @@
               <p>
                 <span style="font-size: 0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{live.liveName}}</span>
                 <span fxFlex></span>
-                <span style="font-size: 0.7rem;" fxFlex="25" fxLayoutAlign="end center">{{live.liveDate}}</span>
+
+                <mat-chip class="mat-chip-date" color="primary" selected fxFlex="25" fxLayoutAlign="center center">
+                  <span style="font-size: 0.8rem;">{{live.liveDate | localDateTime}}</span>
+                </mat-chip>
+
               </p>
               <p style="font-size: 0.7rem;">
                 Canal: <span>{{live.channelName}}</span>
@@ -43,7 +47,9 @@
               <p>
                 <span style="font-size: 0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{live.liveName}}</span>
                 <span fxFlex></span>
-                <span style="font-size: 0.7rem;" fxFlex="25" fxLayoutAlign="end center">{{live.liveDate}}</span>
+                <mat-chip class="mat-chip-date" color="primary" selected fxFlex="25" fxLayoutAlign="center center">
+                  <span style="font-size: 0.8rem;">{{live.liveDate | localDateTime}}</span>
+                </mat-chip>
               </p>
               <p style="font-size: 0.7rem;">
                 Canal: <span>{{live.channelName}}</span>

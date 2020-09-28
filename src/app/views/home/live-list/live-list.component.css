@@ -1,4 +1,4 @@
-.mat-card-live{
+.mat-card-live {
   border: 1px solid #CFD8DC;
   border-radius: 4px 3px 6px / 2px 4px;
   padding-top: 15px;
@@ -8,7 +8,7 @@
   margin: 5px;
 }
 
-.mat-card-title-live{
+.mat-card-title-live {
   padding-left:10px;
   padding-top: 0px;
   padding-right: 15px;
@@ -16,3 +16,6 @@
   min-height: 70px;
 }
 
+.mat-chip-date {
+  border-radius: 10px;
+}
