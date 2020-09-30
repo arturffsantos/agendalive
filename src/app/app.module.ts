@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 import { HomeComponent } from './views/home/home.component';
@@ -50,7 +51,8 @@ import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form
     MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatProgressBarModule
   ],
   providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
