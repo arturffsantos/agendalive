@@ -22,7 +22,7 @@ export class LiveFormDialogComponent implements OnInit {
       liveName: ['', [Validators.required]],
       channelName: ['', [Validators.required]],
       liveLink: ['', [Validators.required]],
-      liveDate: ['2020-10-01T20:00:00', [Validators.required]],
+      liveDate: ['', [Validators.required]],
       liveTime: ['', [Validators.required]],
     });
   }
