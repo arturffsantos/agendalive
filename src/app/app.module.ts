@@ -13,11 +13,15 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomeComponent } from './views/home/home.component';
 import { LiveListComponent } from './views/home/live-list/live-list.component';
 import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form
     MatTabsModule,
     MatCardModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
