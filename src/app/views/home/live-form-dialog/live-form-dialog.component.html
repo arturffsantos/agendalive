@@ -17,7 +17,7 @@
     </mat-form-field>
 
     <div fxLayout="row wrap">
-      <div fxFlex="50" fxFill fxLayoutAlign="start center">
+      <div fxFlex="40" fxFill fxLayoutAlign="start center">
         <mat-form-field class="live-full-width">
           <mat-label>Data da live</mat-label>
           <input matInput [matDatepicker]="picker" formControlName="liveDate" name="liveDate">
@@ -25,7 +25,8 @@
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
       </div>
-      <div fxFlex="50" fxFill fxLayoutAlign="start center">
+      <div fxFlex></div>
+      <div fxFlex="40" fxFill fxLayoutAlign="start center">
         <mat-form-field class="live-full-width">
           <mat-label>Horário da live</mat-label>
           <input matInput type="time" formControlName="liveTime" name="liveTime" #time>

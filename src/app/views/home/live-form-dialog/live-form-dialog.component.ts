@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { LiveService } from 'src/app/shared/service/live.service';
-
+import { parseISO, format } from 'date-fns';
 @Component({
   selector: 'app-live-form-dialog',
   templateUrl: './live-form-dialog.component.html',
@@ -28,6 +28,9 @@ export class LiveFormDialogComponent implements OnInit {
   }
 
   createLive(): void {
+    let newDate = format(this.liveForm.value.liveDate, 'yyyy-MM-dd');
+    this.liveForm.value.liveDate = newDate + 'T' + this.liveForm.value.liveTime;
+
     this.rest.postLives(this.liveForm.value).subscribe(result => { });
     this.cancel();
   }
