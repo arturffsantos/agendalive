@@ -19,42 +19,14 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
-
-import { HomeComponent } from './views/home/home.component';
-import { LiveListComponent } from './views/home/live-list/live-list.component';
-import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
-import { LiveFormDialogComponent } from './views/home/live-form-dialog/live-form-dialog.component';
-
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    LiveListComponent,
-    LocalDateTimePipe,
-    LiveFormDialogComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTabsModule,
-    MatCardModule,
-    MatChipsModule,
-    MatDialogModule,
-    MatInputModule,
-    MatNativeDateModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatDatepickerModule,
-    MatProgressBarModule
+    BrowserAnimationsModule
   ],
-  providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
